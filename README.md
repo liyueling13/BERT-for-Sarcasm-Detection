@@ -22,7 +22,6 @@ Looking at others on Google/Github who have attempted the same project with the 
 
 If I wanted to try again, I would have to significantly modify scope/setup of my question. For instance, the authors of Princeton Sarcasm paper trained their model in a completely different way (not provided in their dataset). 
 
-_"We construct a balanced learning task by taking only one sarcastic and one non-sarcastic response from each set of responses to a comment sequence. The task then becomes one of picking which of two statements that share a context is sarcastic, with performance measured by accuracy...
-_
+"We construct a balanced learning task by taking only one sarcastic and one non-sarcastic response from each set of responses to a comment sequence. The task then becomes one of picking which of two statements that share a context is sarcastic, with performance measured by accuracy..."
 
 Since I don't have such a dataset, I chose to pause this project for now (after much productive learning, although any discernable result to show for it).
