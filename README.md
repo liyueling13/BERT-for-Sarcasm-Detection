@@ -16,7 +16,7 @@ I found two datasets:
 7. Set parameters in Tensorflow for my models including optimizers, learning rates, loss functions (BinaryCrossentropy), epochs, early stopping, metrics, and batch size
 
 ## Results
-Unfortunately, I was never able to train a model that returned more than 50% accuracy on the validation set. Even my data science mentor was not able to achieve a better result! There was also very little documentation for BERT in Tensorflow and PyTorch on Hugging Face, which made it difficult to look at the model architecture in more detail to debug my model.
+Unfortunately, I was never able to train a model that returned more than 50% accuracy on the validation set. Even my data science mentor was not able to achieve a better result. There was also very little documentation for BERT in Tensorflow and PyTorch on Hugging Face, which made it difficult to look at the model architecture in more detail to debug my model.
 
 Looking at others on Google/Github who have attempted the same project with the Princeton NLP sarcasm dataset, however--no one has been able to succeed so far. Those who have attempted the project with LLMs have given up, and/or achieved reasonable results using the same training set data (vs. validation/test/holdout data).
 
