@@ -3,15 +3,15 @@ Figurative language like irony and sarcasm can be quite difficult to detect, eve
 
 ## Data
 I found two datasets: 
-1. The first, from Hugging Face, contained [tweets labelled for irony]([url](https://huggingface.co/datasets/tweet_eval)) 
-2. The second, from Princeton NLP, contains [Reddit comments labelled for sarcasm]([url](https://nlp.cs.princeton.edu/old/SARC/1.0/main/)), [see also paper here]([url](https://arxiv.org/pdf/1704.05579.pdf)https://arxiv.org/pdf/1704.05579.pdf).
+1. The first, from Hugging Face, contained ![tweets labelled for irony](https://huggingface.co/datasets/tweet_eval) 
+2. The second, from Princeton NLP, contains ![Reddit comments labelled for sarcasm](https://nlp.cs.princeton.edu/old/SARC/1.0/main/), ![see also paper here](https://arxiv.org/pdf/1704.05579.pdf).
 
 ## Methods
 1. Connected to Google Colab and Kaggle's TPUs to be able to run my model efficiently
 2. To load my datasets, used Hugging Face datasets package and mounted and imported Google Colab Drive
 3. Learned about transformer models: encodings, attention masks, and self-attention
-4. Used pandas to clean and wrangle data
-5. Learned both Distilbert and BERT models in Tensorflow and Pytorch (tokenized data, loaded into TF datasets vs. torch dataloaders, froze base layers)
+4. Used pandas to clean and wrangle data: see ![Sarcasm - EDA](https://github.com/liyueling13/BERT-for-Sarcasm-Detection/blob/main/Sarcasm%20-%20EDA.ipynb)
+5. Learned both Distilbert and BERT models in Tensorflow and Pytorch (tokenized data, loaded into TF datasets vs. torch dataloaders, froze base layers): see ![Irony - Distilbert](https://github.com/liyueling13/BERT-for-Sarcasm-Detection/blob/main/Irony%20-%20Distilbert%20model.ipynb) and ![Sarcasm - BERT](https://github.com/liyueling13/BERT-for-Sarcasm-Detection/blob/main/Sarcasm%20-%20BERT%20model.ipynb)
 6. Wrote a custom classification head with more deep learning layers for BertForSequenceClassification
 7. Set parameters in Tensorflow for my models including optimizers, learning rates, loss functions (BinaryCrossentropy), epochs, early stopping, metrics, and batch size
 
