@@ -9,7 +9,7 @@ I may not even be able to tell when someone is being ironic or sarcastic; can a 
 ## Data
 I found two datasets: 
 1. The first, from Hugging Face, contained [tweets labelled for irony](https://huggingface.co/datasets/tweet_eval) 
-2. The second, from Princeton NLP, contains [Reddit comments labelled for sarcasm](https://nlp.cs.princeton.edu/old/SARC/1.0/main/), ![see also paper here](https://arxiv.org/pdf/1704.05579.pdf).
+2. The second, from Princeton NLP, contains [Reddit comments labelled for sarcasm](https://nlp.cs.princeton.edu/old/SARC/1.0/main/), [see also paper here](https://arxiv.org/pdf/1704.05579.pdf).
 
 ## Methods
 1. Connected to Google Colab and Kaggle's TPUs to be able to run my model efficiently
@@ -27,7 +27,7 @@ Using a subset of the data, I created a visualization of frequent words in non-s
 - Common in sarcastic comments: 'oh yeah', 'unplayable', 'is nt', 'dare', 'liberal', 'worry', 'obviously', 'blame', 'trash', 'literally unplayable'
 ![Sarcasm Scattertext Explorer](https://github.com/liyueling13/BERT-for-Sarcasm-Detection/assets/81717153/576f136d-0b41-418a-9d93-f0f65dfc5035)
 
-[See interactive visualization here]([url](https://liyueling13.github.io/Sarcasm%20Scattertext%20Explorer.html)) (NB: takes some time to load).
+[See interactive visualization here](https://liyueling13.github.io/Sarcasm%20Scattertext%20Explorer.html) (NB: takes some time to load).
 
 ## Results
 Unfortunately, I was never able to train a model that returned more than 50% accuracy on the validation set. There was also very little documentation for BERT in Tensorflow and PyTorch on Hugging Face, which made it difficult to look at the model architecture in more detail to debug my model.
