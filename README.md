@@ -14,11 +14,20 @@ I found two datasets:
 ## Methods
 1. Connected to Google Colab and Kaggle's TPUs to be able to run my model efficiently
 2. To load my datasets, used Hugging Face datasets package and mounted and imported Google Colab Drive
-3. Learned about transformer models: encodings, attention masks, and self-attention
-4. Used pandas to clean and wrangle data: see [Sarcasm - EDA](https://github.com/liyueling13/BERT-for-Sarcasm-Detection/blob/main/Sarcasm%20-%20EDA.ipynb)
-5. Learned both Distilbert and BERT models in Tensorflow and Pytorch (tokenized data, loaded into TF datasets vs. torch dataloaders, froze base layers): see [Irony - Distilbert](https://github.com/liyueling13/BERT-for-Sarcasm-Detection/blob/main/Irony%20-%20Distilbert%20model.ipynb) and [Sarcasm - BERT](https://github.com/liyueling13/BERT-for-Sarcasm-Detection/blob/main/Sarcasm%20-%20BERT%20model.ipynb)
-6. Wrote a custom classification head with more deep learning layers for BertForSequenceClassification
-7. Set parameters in Tensorflow for my models including optimizers, learning rates, loss functions (BinaryCrossentropy), epochs, early stopping, metrics, and batch size
+3. Performed data exploration and visualization using matplotlib, seaborn, and Scattertext
+4. Learned about and fine tuned transformer models: encodings, attention masks, and self-attention
+5. Used pandas to clean and wrangle data: see [Sarcasm - EDA](https://github.com/liyueling13/BERT-for-Sarcasm-Detection/blob/main/Sarcasm%20-%20EDA.ipynb)
+6. Learned about and fine tuned both Distilbert and BERT models in Tensorflow and Pytorch (tokenized data, loaded into TF datasets vs. torch dataloaders, froze base layers): see [Irony - Distilbert](https://github.com/liyueling13/BERT-for-Sarcasm-Detection/blob/main/Irony%20-%20Distilbert%20model.ipynb) and [Sarcasm - BERT](https://github.com/liyueling13/BERT-for-Sarcasm-Detection/blob/main/Sarcasm%20-%20BERT%20model.ipynb)
+7. Wrote a custom classification head with more deep learning layers for BertForSequenceClassification
+8. Set parameters in Tensorflow for my models including optimizers, learning rates, loss functions (BinaryCrossentropy), epochs, early stopping, metrics, and batch size
+
+## Scattertext Visualization
+Using a subset of the data, I created a visualization of frequent words in non-sarcastic & sarcastic comments. 
+- Common in non-sarcastic comments: 'link please', 'please respect', 'respect link', 'rather', 'episode', 'edge', 'total', 'ask', 'son', 'bit'
+- Common in sarcastic comments: 'oh yeah', 'unplayable', 'is nt', 'dare', 'liberal', 'worry', 'obviously', 'blame', 'trash', 'literally unplayable'
+![Sarcasm Scattertext Explorer](https://github.com/liyueling13/BERT-for-Sarcasm-Detection/assets/81717153/576f136d-0b41-418a-9d93-f0f65dfc5035)
+
+[See interactive visualization here]([url](https://liyueling13.github.io/Sarcasm%20Scattertext%20Explorer.html)) (NB: takes some time to load).
 
 ## Results
 Unfortunately, I was never able to train a model that returned more than 50% accuracy on the validation set. There was also very little documentation for BERT in Tensorflow and PyTorch on Hugging Face, which made it difficult to look at the model architecture in more detail to debug my model.
