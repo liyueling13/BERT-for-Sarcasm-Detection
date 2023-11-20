@@ -1,5 +1,7 @@
 # BERT-for-Sarcasm-Detection
-Figurative language like irony and sarcasm can be quite difficult to detect, even by humans. It doesn’t mean what it says; it signifies something different than what it means. It is “the expression of one's meaning by using language that normally signifies the opposite, typically for humorous or emphatic effect” (Oxford Languages Dictionary). It’s a kind of figurative/poetic language. It requires deep context, abstract understanding, nuance and precision, a sense of humor, and more. To that, I wanted to train a deep learning model to detect irony and/or sarcasm.
+Figurative language like irony and sarcasm can be quite difficult to detect. It doesn’t mean what it says; it signifies something different than what it means. It is “the expression of one's meaning by using language that normally signifies the opposite, typically for humorous or emphatic effect” (Oxford Languages Dictionary). It requires deep context, abstract understanding, nuance and precision, a sense of humor, and more. I may not even be able to tell when someone is being ironic or sarcastic; can a LLM detect whether or not a comment is ironic or sarcastic?
+
+Let's fine-tune a BERT model to detect irony and sarcasm.
 
 ## Data
 I found two datasets: 
